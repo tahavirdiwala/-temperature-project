@@ -62,16 +62,59 @@
 //     println!("{some_integer}");
 // }
 
+// fn main() {
+//     let s1 = String::from("hello");
+
+//     let (val, len) = get_len_val(s1);
+
+//     println!("{}, {}", val, len)
+// }
+
+// fn get_len_val(val: String) -> (String, usize) {
+//     let len = val.len();
+
+//     (val, len)
+// }
+
+//refernce
+
+// fn main() {
+//     let s1 = String::from("hello");
+
+//     let len = calculate_length(&s1);
+
+//     println!("{}, {}", len, s1)
+// }
+
+// fn calculate_length(s: &String) -> usize {
+//     s.len()
+// }
+
+// fn main() {
+//     let mut s = String::from("hello");
+    
+//     change(&mut s);
+// }
+
+// fn change(some_string: &mut String) {
+//     some_string.push_str(", world");
+// }
+
+// fn main() {
+//     let mut s = String::from("hello world");
+
+//     let r1 = &mut s;
+
+//     println!("{}", r1)
+// }
+
+
 fn main() {
-    let s1 = String::from("hello");
+    let mut s = String::from("hello");
 
-    let (val, len) = get_len_val(s1);
+    let r1 = &s;
+    let r2 = &s;
 
-    println!("{}, {}", val, len)
-}
+    println!("{}, {}", r1, r2);
 
-fn get_len_val(val: String) -> (String, usize) {
-    let len = val.len();
-
-    (val, len)
 }
