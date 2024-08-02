@@ -1,7 +1,7 @@
 // use std::io;
 
 // fn main() {
-//     find_celsius();
+//     find_c();
 // }
 
 // fn find_celsius() {
@@ -109,12 +109,31 @@
 // }
 
 
+// fn main() {
+//     let mut s = String::from("hello world");
+//     println!("{}", first_word(&s));
+
+//     s.clear();
+// }
+
+// fn first_word(s: &String) -> usize {
+//     let bytes = s.as_bytes();
+
+//     for (i, &item) in bytes.iter().enumerate() {
+//         if item == b' ' {
+//             return i;
+//         }
+//     }
+//     s.len()
+// }
+
+//slices
+
 fn main() {
-    let mut s = String::from("hello");
+    let string = String::from("hello world");
 
-    let r1 = &s;
-    let r2 = &s;
+    let first_part_of_str = &string[0..5];
+    let second_part_of_str = &string[6..11];
 
-    println!("{}, {}", r1, r2);
-
+    println!("{} {}", first_part_of_str, second_part_of_str)
 }
