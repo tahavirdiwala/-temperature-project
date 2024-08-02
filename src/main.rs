@@ -129,11 +129,19 @@
 
 //slices
 
-fn main() {
-    let string = String::from("hello world");
+// fn main() {
+//     let string = String::from("hello world");
 
-    let first_part_of_str = &string[0..5];
-    let second_part_of_str = &string[6..11];
+//     let first_part_of_str = &string[0..5];
+//     let second_part_of_str = &string[6..11];
 
-    println!("{} {}", first_part_of_str, second_part_of_str)
-}
+//     println!("{} {}", first_part_of_str, second_part_of_str)
+// }
+
+// fn main() {
+//     let string = String::from("hello world");
+
+//     let slice = &string[3..];
+
+//     println!("{}", slice)
+// }
